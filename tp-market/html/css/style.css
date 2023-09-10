@@ -1,0 +1,330 @@
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+
+    text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#supermarket{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+margin-top: 5vw;
+  text-align: left;
+
+background-color: rgba(27, 27, 27, 0.719);
+background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+
+overflow: hidden;
+width: 70vw;
+height: 44vw;
+
+justify-content: center;
+
+-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
+
+/* LEFT SIDE */
+#left-side{
+  border-radius: 5%;
+  width: 70%;
+  height: 80%;
+  margin: 0% 0% 5% 15%;
+}
+
+#supermarket_type_title{
+  position: absolute;
+  letter-spacing: 0.2vw;
+  font-size: 2vw;
+  margin-left: 1.25vw;
+  margin-top: 1vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#super_type_style{
+  margin-left: -120%;
+  color: rgb(114, 114, 114);
+  text-shadow: 0px 5px 10px rgb(114, 114, 114);
+  font-weight: bolder;
+}
+
+#current-currency-title{
+  letter-spacing: 2px;
+  font-size: 126px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#current-currency-style{
+  display: flex;
+  color: red;
+  text-shadow: 0px 5px 10px rgb(218, 32, 32);
+  font-weight: bolder;
+}
+
+#products{
+  width: 60%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.931);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: inline-block;
+
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px 2px rgba(246, 246, 246, 0.15);
+
+  margin-left: -75%;
+  margin-top: 3vw;
+  text-align: left;
+} 
+
+#product_main{
+  width: 95%;
+  height: 11.2%;
+  color: white;
+  display: inline-block;
+  flex: 0 0 auto;
+  max-height: 100%;
+  margin: 1.8%;
+  /* background-size: 100%; */
+}
+#product_det{
+  border-radius: 1px;
+  background-color: rgba(66, 66, 66, 0.513);
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  box-shadow: inset 0 0 2px 2px rgba(246, 246, 246, 0.253);
+  height: 105%;
+}
+
+#product_price_title{
+  color: greenyellow;
+  margin-left: 75%;
+  font-size: 20px;
+  text-shadow: 0px 0px 10px greenyellow;
+}
+
+#product_label{
+
+  display: block;
+  color: rgb(212, 212, 212);
+
+  margin-top: -11%;
+  margin-left: 25%;
+  font-size: 0.9vw;
+}
+
+#product_checkout{
+  display: block;
+  margin-top: 0.4vw;
+  margin-left: 69%;
+  background-color: rgba(73, 184, 129, 0.582);
+  color: white;
+  font-size: 0.8vw;
+  width: 8vw;
+  border-radius: 1px;
+  text-align: center;
+}
+#product_checkout:hover{
+  cursor: pointer;
+  background-color: rgba(73, 184, 129, 0.982);
+}
+
+#product_det img{
+  width: 4vw;
+  height: 3.5vw;
+  margin: 1% 2%;
+
+  border-radius: 1px;
+  box-shadow: inset 0 0 2px 2px rgba(255, 255, 255, 0.726);
+
+}
+#product_img{
+  width: 128px;
+  height: 128px;
+}
+
+/* RIGHT SIDE */
+#right-side{
+  width: 60%;
+  height: 70%;
+  background-color: rgba(8, 8, 8, 0.931);
+  display: block;
+
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px 2px rgba(246, 246, 246, 0.15);
+
+  margin-top: -72.3%;
+  margin-right: -60%;
+  text-align: left;
+}
+
+#displayed_product_description_title {
+  display: inline-block;
+  width: fit-content;
+
+  margin-top: 2%;
+  margin-left: 3%;
+
+  font-size: 1.5vw;
+  color: rgb(212, 212, 212);
+}
+
+#displayed_product_description {
+  display: inline-block;
+  width: 28vw;
+  margin-left: 3%;
+  margin-top: 5%;
+  
+  font-size: 1.0vw;
+  color: rgb(73, 184, 129);
+  text-shadow: 0px 0px 10px rgb(73, 184, 129);
+}
+
+
+#displayed_product_purchase_title{
+  display: inline-block;
+  width: fit-content;
+
+  margin-top: 10%;
+  margin-left: 3%;
+
+  font-size: 1.5vw;
+  color: rgb(212, 212, 212);
+}
+
+#displayed_product_purchase_cost{
+  display: inline-block;
+  width: 28vw;
+  margin-left: 3%;
+  margin-top: 5%;
+  
+  font-size: 1vw;
+  color: rgb(144, 144, 144);
+  text-shadow: 0px 0px 10px rgb(144, 144, 144);
+}
+
+
+/* BOTTOM RIGHT SIDE */
+#bottom-right-side{
+  width: 60%;
+  height: 10%;
+  background-color: rgba(8, 8, 8, 0.931);
+  display: block;
+
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px 2px rgba(246, 246, 246, 0.15);
+
+  margin-top: 5.3%;
+  margin-right: -60%;
+  text-align: left;
+}
+
+#product_count{
+  display: inline-block;
+
+  font-size: 1vw;
+  margin-top: 0.8vw;
+  margin-left: 4vw;
+
+  height: fit-content;
+}
+
+#product_buy{
+  display: inline-block;
+
+  background-color: rgba(73, 184, 129, 0.582);
+  color: white;
+  font-size: 0.8vw;
+  width: 8vw;
+  margin-left: 5vw;
+  border-radius: 0.1vw;
+  text-align: center;
+}
+#product_buy:hover{
+  cursor: pointer;
+  background-color: rgba(73, 184, 129, 0.982);
+}
+
+
+/* BOTTOM COUNTER RIGHT SIDE */
+
+#bottom-counter-right-side{
+  width: 60%;
+  height: 10%;
+  background-color: rgba(8, 8, 8, 0.931);
+  display: block;
+
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px 2px rgba(246, 246, 246, 0.15);
+
+  margin-top: 2.3%;
+  margin-right: -60%;
+  text-align: left;
+}
+
+#product_count_total_cost{
+  display: inline-block;
+  font-size: 1.2vw;
+  color: whitesmoke;
+  text-shadow: 0px 0px 10px whitesmoke;
+
+  margin-top: 3%;
+  margin-left: 3%;
+  text-align: left;
+}
+
+#product_accepted_payment_types{
+  display: block;
+  width: fit-content;
+  font-size: 0.9vw;
+
+  color: rgb(144, 144, 144);
+
+  margin-top: -4vw;
+  margin-left: 2vw;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border: 0.0px solid grey;
+  border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(49, 49, 49, 0.8);
+  border-radius: 5px;
+}
+
+input[type=text] {
+	font-family: "Prototype", serif;
+	font-size: 15px;
+	width: 25%;
+	color: rgba(255, 255, 255, 0.719);
+	height: 40px;
+	text-align: center;
+	background-color: rgb(27, 27, 27, 0.719);
+	border-color: rgb(58, 58, 58, 0.719);
+	margin-left: 5%;
+	margin-right: 5%;
+}
